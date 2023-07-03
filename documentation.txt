@@ -1,0 +1,11 @@
+1. importing data from csv file into xlsx file using Power Query
+	1.1 sorting out unneccesary columns
+2. cleaning data
+	2.1 using advanced filter to sort out only the 20 Premier League teams
+	2.2 replacing dots with commas in the "Value", "International reputation" and "Weak foot" columns
+	2.3 deleting € occurences in "Value" and "Wage" column
+	2.4 changing the data in "Value" and "Wage" columns from "10M" to 10 000 000 with the following formula:
+	=JEŻELI.BŁĄD(LEWY(USUŃ.ZBĘDNE.ODSTĘPY(I2);DŁ(USUŃ.ZBĘDNE.ODSTĘPY(I2))-1)*10	^(PODAJ.POZYCJĘ(PRAWY(USUŃ.ZBĘDNE.ODSTĘPY(I2));{"K";"M"};0)*3);I2)
+	I2 - is the cell from where data is being taken
+	2.5 aggregating to subtotals and limiting the count of players in each team to 18 best players by overall
+	2.6 deleting the subtotals
