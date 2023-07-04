@@ -8,5 +8,9 @@ I found this dataset on https://www.kaggle.com/datasets/bryanb/fifa-player-stats
 
 ## Features
 
-* Comparison of Premier League Table Positions and Player Valuations
+* comparison of points won and player overall (valuations)
+* comparison of place in table and players' values
+* calculating BMI average values of each team
+* comparison of players' potential to points won
+
 
